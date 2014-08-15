@@ -29,23 +29,23 @@
 <fieldset data-role="controlgroup" data-mini="true">
  <legend><h4>Professor</h4></legend>
     <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="Mr. Quosai" data-mini="true" type="text" maxlength="21">
+      <input name="key1" id="slotcustomtext" placeholder="Enter custom slot text" value="Mr. Quosai" data-mini="true" type="text" maxlength="21">
     </div>
 </fieldset>
 
 <fieldset data-role="controlgroup" data-mini="true">
  <legend><h4>Class Code</h4></legend>
     <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="060898" data-mini="true" type="text" maxlength="21">
+      <input name="key2" id="slotcustomtext" placeholder="Enter custom slot text" value="060898" data-mini="true" type="text" maxlength="21">
     </div>
 </fieldset>
 
 <fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
     <legend>Class Type</legend>
-    	<input name="key2" id="key2-1" data-type="int" value="1" checked="checked" type="radio">
-        <label for="key2-1">Lecture</label>
-        <input name="key2" id="key2-0" data-type="int" value="0" type="radio">
-        <label for="key2-0">Lab</label>
+    	<input name="key3" id="key3-1" data-type="int" value="1" checked="checked" type="radio">
+        <label for="key3-1">Lecture</label>
+        <input name="key3" id="key3-0" data-type="int" value="0" type="radio">
+        <label for="key3-0">Lab</label>
 </fieldset>
 
 <div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-mini="false">
@@ -57,7 +57,7 @@
  <legend><h4>Start Time</h4></legend>
  <i>Please enter in the format <b>[24 hour hour].[minute] ie. 2:30 PM would be 14.30</b></i>
     <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="14.30" data-mini="true" type="text" maxlength="21">
+      <input name="key4" id="slotcustomtext" placeholder="Enter custom slot text" value="14.30" data-mini="true" type="text" maxlength="21">
     </div>
 </fieldset>
 
@@ -65,68 +65,7 @@
  <legend><h4>End Time</h4></legend>
  <i>Same format as above, please.</i>
     <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="15.45" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
-</div>
-
-</div>
-
-</div>
-
-<!--More classes here-->
-
-</div>
-</div>
-
-<div data-role="collapsible">
-        <h3>Tuesday</h3>
-
-<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-mini="false">
-
-<div data-role="collapsible">
-        <h3>Class 1</h3>
-
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>Professor</h4></legend>
-    <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="Mr. Quosai" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
-
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>Class Code</h4></legend>
-    <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="060898" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
-
-<fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
-    <legend>Class Type</legend>
-    	<input name="key2" id="key2-1" data-type="int" value="1" checked="checked" type="radio">
-        <label for="key2-1">Lecture</label>
-        <input name="key2" id="key2-0" data-type="int" value="0" type="radio">
-        <label for="key2-0">Lab</label>
-</fieldset>
-
-<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-mini="false">
-
-<div data-role="collapsible">
-        <h3>Time</h3>
-
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>Start Time</h4></legend>
- <i>Please enter in the format <b>[24 hour hour].[minute] ie. 2:30 PM would be 14.30</b></i>
-    <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="14.30" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
-
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>End Time</h4></legend>
- <i>Same format as above, please.</i>
-    <div class="ui-field-contain">
-      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="15.45" data-mini="true" type="text" maxlength="21">
+      <input name="key5" id="slotcustomtext" placeholder="Enter custom slot text" value="15.45" data-mini="true" type="text" maxlength="21">
     </div>
 </fieldset>
 </div>
@@ -183,15 +122,11 @@ www.iPhibse.ch <br><br>
     <script>
       function saveOptions() {
         var options = {
-          'hidebticon':     Number( $("input[name=key6]:checked").val() ),
-          'theme':     Number( $("input[name=key7]:checked").val() ),
-          'covertext':     Number( $("input[name=key8]:checked").val() ),
-          'btdisalert':     Number( $("input[name=key1]:checked").val() ),
-          'btrealert':     Number( $("input[name=key2]:checked").val() ),
-          'batterybarstyle':     Number( $("input[name=key3]:checked").val() ),
-          'showminute':     Number( $("input[name=key4]:checked").val() ),
-          'lang':     Number( $("input[name=key9]:checked").val() ),
-          'cleanerlook':     Number( $("input[name=key5]:checked").val() ),
+          'm_c1_prof':     $("input[name=key1]:checked").val(),
+          'm_c1_code':     $("input[name=key2]:checked").val(),
+          'm_c1_type':     Number( $("input[name=key3]:checked").val() ),
+          'm_c1_start':     $("input[name=key4]:checked").val(),
+          'm_c1_end':     $("input[name=key5]:checked").val(),
         }
         return options;
       }
@@ -199,27 +134,15 @@ www.iPhibse.ch <br><br>
       $().ready(function() {
        if (typeof window.localStorage !== "undefined") {
        	console.log("Not undefined :)");
-        if (window.localStorage.rlr_settings) {
-          ls_pto = JSON.parse(window.localStorage.rlr_settings);
+        if (window.localStorage.class_settings) {
+          ls_pto = JSON.parse(window.localStorage.class_settings);
           // the Pebble webview dies on the next line...
-          $("input[name=key6][id=key6-"+ls_pto["hidebticon"]+"]").prop('checked',true);
-          $("input[name=key6]").checkboxradio('refresh');
-          $("input[name=key7][id=key7-"+ls_pto["theme"]+"]").prop('checked',true);
-          $("input[name=key7]").checkboxradio('refresh');
-          $("input[name=key8][id=key8-"+ls_pto["covertext"]+"]").prop('checked',true);
-          $("input[name=key8]").checkboxradio('refresh');
-          $("input[name=key1][id=key1-"+ls_pto["btdisalert"]+"]").prop('checked',true);
-          $("input[name=key1]").checkboxradio('refresh');
-          $("input[name=key2][id=key2-"+ls_pto["btrealert"]+"]").prop('checked',true);
-          $("input[name=key2]").checkboxradio('refresh');
-          $("input[name=key3][id=key3-"+ls_pto["batterybarstyle"]+"]").prop('checked',true);
+          $("input[name=key1]").val(ls_pto["m_c1_prof"]);
+          $("input[name=key2]").val(ls_pto["m_c1_code"]);
+          $("input[name=key3][id=key3-"+ls_pto["m_c1_type"]+"]").prop('checked',true);
           $("input[name=key3]").checkboxradio('refresh');
-          $("input[name=key4][id=key4-"+ls_pto["showminute"]+"]").prop('checked',true);
-          $("input[name=key4]").checkboxradio('refresh');
-          $("input[name=key5][id=key5-"+ls_pto["cleanerlook"]+"]").prop('checked',true);
-          $("input[name=key5]").checkboxradio('refresh');
-          $("input[name=key9][id=key9-"+ls_pto["lang"]+"]").prop('checked',true);
-          $("input[name=key9]").checkboxradio('refresh');
+          $("input[name=key4]").val(ls_pto["m_c1_start"]);
+          $("input[name=key5]").val(ls_pto["m_c1_end"]);
         }
        }
         $("#b-cancel").click(function() {
@@ -232,7 +155,7 @@ www.iPhibse.ch <br><br>
 
           ls_pto = JSON.stringify(saveOptions());
           if (typeof window.localStorage !== "undefined") {
-            window.localStorage.rlr_settings = ls_pto;
+            window.localStorage.class_settings = ls_pto;
           }
           var location = "pebblejs://close#" + ls_pto;
           console.log("Warping to: " + location);
