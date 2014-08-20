@@ -19,36 +19,40 @@
 <div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-mini="false">
 
 <div data-role="collapsible">
-        <h3>Monday</h3>
+        <h3>Instructions</h3>
+<b>To sync a class:</b><br>
+1. Check what class out of 6 it is, (ie. class 2/6) in the "class number" section. This number will accordingly insert the
+class into that slot on the watch.<br>
+2. Insert all of the details in the class in the "details" section<br>
+3. Send data to pebble<br>
+<i>The app will figure out on its own what class is next for you.</i><br><br>
 
-<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-mini="false">
+<b>Made a mistake? The settings page remembers the last synced class for you to edit again, and again, and again.</b>
+</div>
 
 <div data-role="collapsible">
-        <h3>Class 1</h3>
+<h3>Class Number</h3>
 
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>Professor</h4></legend>
-    <div class="ui-field-contain">
-      <input name="key1" id="slotcustomtext" placeholder="Enter custom slot text" value="Mr. Quosai" data-mini="true" type="text" maxlength="21">
-    </div>
+<fieldset data-role="controlgroup" data-type="horizontal" data-mini="true">
+    <legend>#</legend>
+    	<input name="key0" id="key0-1" data-type="int" value="1" checked="checked" type="radio">
+        <label for="key0-1">Class 1/6</label>
+        <input name="key0" id="key0-2" data-type="int" value="2" type="radio">
+        <label for="key0-2">Class 2/6</label>
+        <input name="key0" id="key0-3" data-type="int" value="3" type="radio">
+        <label for="key0-3">Class 3/6</label>
+        <input name="key0" id="key0-4" data-type="int" value="4" type="radio">
+        <label for="key0-4">Class 4/6</label>
+        <input name="key0" id="key0-5" data-type="int" value="5" type="radio">
+        <label for="key0-5">Class 5/6</label>
+        <input name="key0" id="key0-6" data-type="int" value="6" type="radio">
+        <label for="key0-6">Class 6/6</label>
 </fieldset>
 
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>Class Code</h4></legend>
-    <div class="ui-field-contain">
-      <input name="key2" id="slotcustomtext" placeholder="Enter custom slot text" value="060898" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
+</div>
 
-<fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
-    <legend>Class Type</legend>
-    	<input name="key3" id="key3-1" data-type="int" value="1" checked="checked" type="radio">
-        <label for="key3-1">Lecture</label>
-        <input name="key3" id="key3-0" data-type="int" value="0" type="radio">
-        <label for="key3-0">Lab</label>
-</fieldset>
-
-<div data-role="collapsible-set" data-theme="c" data-content-theme="d" data-mini="false">
+<div data-role="collapsible">
+<h3>Details</h3>
 
 <div data-role="collapsible">
         <h3>Time</h3>
@@ -70,30 +74,50 @@
 </fieldset>
 </div>
 
-</div>
+<fieldset data-role="controlgroup" data-mini="true">
+ <legend><h4>Professor</h4></legend>
+    <div class="ui-field-contain">
+      <input name="key1" id="slotcustomtext" placeholder="Enter custom slot text" value="Mr. Quosai" data-mini="true" type="text" maxlength="21">
+    </div>
+</fieldset>
 
-</div>
+<fieldset data-role="controlgroup" data-mini="true">
+ <legend><h4>Class Code/Room</h4></legend>
+    <div class="ui-field-contain">
+      <input name="key2" id="slotcustomtext" placeholder="Enter custom slot text" value="Room 1337" data-mini="true" type="text" maxlength="10">
+    </div>
+</fieldset>
 
-<!--More classes here-->
+<fieldset data-role="controlgroup" data-mini="true">
+ <legend><h4>Name/h4></legend>
+    <div class="ui-field-contain">
+      <input name="key6" id="slotcustomtext" placeholder="Enter custom slot text" value="Computer Sciences" data-mini="true" type="text" maxlength="30">
+    </div>
+</fieldset>
 
-</div>
+<fieldset data-role="controlgroup" data-type="vertical" data-mini="true">
+    <legend>Class Type</legend>
+    	<input name="key3" id="key3-1" data-type="int" value="1" checked="checked" type="radio">
+        <label for="key3-1">Lecture</label>
+        <input name="key3" id="key3-0" data-type="int" value="0" type="radio">
+        <label for="key3-0">Lab</label>
+</fieldset>
+
 </div>
 
     <div data-role="collapsible">
         <h3>Information and Support</h3>
-<p>Newest app version: 0.1-internal<br><br>
-Website version: 0.2<br><br>
+<p>Newest app version: 0.3-internal<br><br>
+Website version: 0.3<br><br>
 <b>Credits:</b><br>
 Edwin Finch - Developer<br>
 
 www.edwinfinch.com/pebble/ see all my projects<br><br>
-<!--
-   - Soon
    
 Philipp Weder (iPhibse) - Design & Graphics<br>
 
 www.iPhibse.ch <br><br>
--->
+
 <b><i>SUPPORT</i></b><br>
 <p>Please contact <b>contact@edwinfinch.com</b> if you need any technical support, want to
 	report a bug that you are experiencing, or suggest a feature. I will get back to you 
@@ -122,11 +146,13 @@ www.iPhibse.ch <br><br>
     <script>
       function saveOptions() {
         var options = {
-          'm_c1_prof':     $("input[name=key1]:checked").val(),
-          'm_c1_code':     $("input[name=key2]:checked").val(),
-          'm_c1_type':     Number( $("input[name=key3]:checked").val() ),
-          'm_c1_start':     $("input[name=key4]:checked").val(),
-          'm_c1_end':     $("input[name=key5]:checked").val(),
+          'number':     Number( $("input[name=key0]:checked").val() ),	
+          'prof':     $("input[name=key1]:checked").val(),
+          'code':     $("input[name=key2]:checked").val(),
+          'type':     Number( $("input[name=key3]:checked").val() ),
+          'start':     $("input[name=key4]:checked").val(),
+          'end':     $("input[name=key5]:checked").val(),
+          'name':     $("input[name=key6]:checked").val(),
         }
         return options;
       }
@@ -136,13 +162,15 @@ www.iPhibse.ch <br><br>
        	console.log("Not undefined :)");
         if (window.localStorage.class_settings) {
           ls_pto = JSON.parse(window.localStorage.class_settings);
-          // the Pebble webview dies on the next line...
-          $("input[name=key1]").val(ls_pto["m_c1_prof"]);
-          $("input[name=key2]").val(ls_pto["m_c1_code"]);
-          $("input[name=key3][id=key3-"+ls_pto["m_c1_type"]+"]").prop('checked',true);
+          $("input[name=key0][id=key3-"+ls_pto["number"]+"]").prop('checked',true);
+          $("input[name=key0]").checkboxradio('refresh');
+          $("input[name=key1]").val(ls_pto["prof"]);
+          $("input[name=key2]").val(ls_pto["code"]);
+          $("input[name=key3][id=key3-"+ls_pto["type"]+"]").prop('checked',true);
           $("input[name=key3]").checkboxradio('refresh');
-          $("input[name=key4]").val(ls_pto["m_c1_start"]);
-          $("input[name=key5]").val(ls_pto["m_c1_end"]);
+          $("input[name=key4]").val(ls_pto["start"]);
+          $("input[name=key5]").val(ls_pto["end"]);
+          $("input[name=key6]").val(ls_pto["name"]);
         }
        }
         $("#b-cancel").click(function() {
