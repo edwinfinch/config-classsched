@@ -56,22 +56,100 @@ class into that slot on the watch.<br>
 
 <div data-role="collapsible">
         <h3>Time</h3>
+        
+        <i>Please follow the folling format: [hr].[min]. ie. 4:30 PM would be 16.30 (has to be 24 hour) or 8:23 AM would
+        	be 8.23
+        </i>
 
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>Start Time</h4></legend>
- <i>Please enter in the format <b>[24 hour hour].[minute] ie. 2:30 PM would be 14.30</b></i>
-    <div class="ui-field-contain">
-      <input name="key4" id="slotcustomtext" placeholder="Enter custom slot text" value="14.30" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
-
-<fieldset data-role="controlgroup" data-mini="true">
- <legend><h4>End Time</h4></legend>
- <i>Same format as above, please.</i>
-    <div class="ui-field-contain">
-      <input name="key5" id="slotcustomtext" placeholder="Enter custom slot text" value="15.45" data-mini="true" type="text" maxlength="21">
-    </div>
-</fieldset>
+	<div data-role="collapsible">
+	        <h3>Monday</h3>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>Start Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key5" id="slotcustomtext" placeholder="Enter custom slot text" value="14.30" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>End Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key6" id="slotcustomtext" placeholder="Enter custom slot text" value="15.45" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	</div>
+	
+	<div data-role="collapsible">
+	        <h3>Tuesday</h3>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>Start Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key7" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>End Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key8" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	</div>
+	
+	<div data-role="collapsible">
+	        <h3>Wednesday</h3>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>Start Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key9" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>End Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key10" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	</div>
+	
+	<div data-role="collapsible">
+	        <h3>Thursday</h3>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>Start Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key11" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>End Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key12" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	</div>
+	
+	<div data-role="collapsible">
+	        <h3>Friday</h3>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>Start Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key13" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	
+	<fieldset data-role="controlgroup" data-mini="true">
+	 <legend><h4>End Time</h4></legend>
+	    <div class="ui-field-contain">
+	      <input name="key14" id="slotcustomtext" placeholder="Enter custom slot text" value="0.00" data-mini="true" type="text" maxlength="21">
+	    </div>
+	</fieldset>
+	</div>
 </div>
 
 <fieldset data-role="controlgroup" data-mini="true">
@@ -91,7 +169,7 @@ class into that slot on the watch.<br>
 <fieldset data-role="controlgroup" data-mini="true">
  <legend><h4>Name</h4></legend>
     <div class="ui-field-contain">
-      <input name="key6" id="slotcustomtext" placeholder="Enter custom slot text" value="Computer Sciences" data-mini="true" type="text" maxlength="30">
+      <input name="key4" id="slotcustomtext" placeholder="Enter custom slot text" value="Computer Sciences" data-mini="true" type="text" maxlength="30">
     </div>
 </fieldset>
 
@@ -150,9 +228,17 @@ www.iPhibse.ch <br><br>
           'prof':     $("input[name=key1]:checked").val(),
           'code':     $("input[name=key2]:checked").val(),
           'type':     Number( $("input[name=key3]:checked").val() ),
-          'start':     $("input[name=key4]:checked").val(),
-          'end':     $("input[name=key5]:checked").val(),
-          'name':     $("input[name=key6]:checked").val(),
+          'start_mon':     $("input[name=key5]:checked").val(),
+          'end_mon':     $("input[name=key6]:checked").val(),
+          'name':     $("input[name=key4]:checked").val(),
+          'start_tue':     $("input[name=key7]:checked").val(),
+          'end_tue':     $("input[name=key8]:checked").val(),
+          'start_wed':     $("input[name=key9]:checked").val(),
+          'end_wed':     $("input[name=key10]:checked").val(),
+          'start_thu':     $("input[name=key11]:checked").val(),
+          'end_thu':     $("input[name=key12]:checked").val(),
+          'start_fri':     $("input[name=key13]:checked").val(),
+          'end_fri':     $("input[name=key14]:checked").val(),
         }
         return options;
       }
@@ -168,9 +254,17 @@ www.iPhibse.ch <br><br>
           $("input[name=key2]").val(ls_pto["code"]);
           $("input[name=key3][id=key3-"+ls_pto["type"]+"]").prop('checked',true);
           $("input[name=key3]").checkboxradio('refresh');
-          $("input[name=key4]").val(ls_pto["start"]);
-          $("input[name=key5]").val(ls_pto["end"]);
-          $("input[name=key6]").val(ls_pto["name"]);
+          $("input[name=key5]").val(ls_pto["start_mon"]);
+          $("input[name=key6]").val(ls_pto["end_mon"]);
+          $("input[name=key4]").val(ls_pto["name"]);
+          $("input[name=key7]").val(ls_pto["start_tue"]);
+          $("input[name=key8]").val(ls_pto["end_tue"]);
+          $("input[name=key9]").val(ls_pto["start_wed"]);
+          $("input[name=key10]").val(ls_pto["end_wed"]);
+          $("input[name=key11]").val(ls_pto["start_thu"]);
+          $("input[name=key12]").val(ls_pto["end_thu"]);
+          $("input[name=key13]").val(ls_pto["start_fri"]);
+          $("input[name=key14]").val(ls_pto["end_fri"]);
         }
        }
         $("#b-cancel").click(function() {
