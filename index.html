@@ -228,6 +228,7 @@ www.iPhibse.ch <br><br>
           'prof':     $("input[name=key1]").val(),
           'code':     $("input[name=key2]").val(),
           'type':     Number( $("input[name=key3]:checked").val() ),
+          'name':     $("input[name=key4]").val(),
           'start_mon':     $("input[name=key5]").val(),
           'end_mon':     $("input[name=key6]").val(),
           'name':     $("input[name=key4]").val(),
@@ -248,12 +249,13 @@ www.iPhibse.ch <br><br>
        	console.log("Not undefined :)");
         if (window.localStorage.class_settings) {
           ls_pto = JSON.parse(window.localStorage.class_settings);
-          $("input[name=key0][id=key3-"+ls_pto["number"]+"]").prop('checked',true);
+          $("input[name=key0][id=key0-"+ls_pto["number"]+"]").prop('checked',true);
           $("input[name=key0]").checkboxradio('refresh');
           $("input[name=key1]").val(ls_pto["prof"]);
           $("input[name=key2]").val(ls_pto["code"]);
           $("input[name=key3][id=key3-"+ls_pto["type"]+"]").prop('checked',true);
           $("input[name=key3]").checkboxradio('refresh');
+          $("input[name=key4]").val(ls_pto["name"]);
           $("input[name=key5]").val(ls_pto["start_mon"]);
           $("input[name=key6]").val(ls_pto["end_mon"]);
           $("input[name=key4]").val(ls_pto["name"]);
